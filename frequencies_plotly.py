@@ -12,12 +12,12 @@ st.write("### Abfrage zu Worthäufigkeiten in Wahlprogrammen (Beta)")
 st.write(f"Ein Tool von [Simon Meier-Vieracker](https://tu-dresden.de/gsw/slk/germanistik/al/die-professur/inhaber), Stand {today_date}")
 
 programs = {
-    "AfD": "https://www.afd.de/wp-content/uploads/2024/11/Leitantrag-Bundestagswahlprogramm-2025.pdf",
+    "AfD": "https://www.afd.de/wp-content/uploads/2025/02/AfD_Bundestagswahlprogramm2025_web.pdf",
     "BSW": "https://bsw-vg.de/wp-content/themes/bsw/assets/downloads/BSW%20Wahlprogramm%202025.pdf",
     "CDU": "https://www.cdu.de/app/uploads/2025/01/km_btw_2025_wahlprogramm_langfassung_ansicht.pdf",
     "FDP": "https://www.fdp.de/sites/default/files/2024-12/fdp-wahlprogramm_2025.pdf",
-    "Gruene": "https://cms.gruene.de/uploads/assets/20241216_BTW25_Programmentwurf_DINA4_digital.pdf",
-    "Linke": "https://www.die-linke.de/fileadmin/1_Partei/parteitage/Au%C3%9Ferordentlicher_Parteitag_25/Wahlprogramm_Entwurf.pdf",
+    "Gruene": "https://cms.gruene.de/uploads/assets/20250205_Regierungsprogramm_DIGITAL_DINA5.pdf",
+    "Linke": "https://www.die-linke.de/fileadmin/user_upload/Wahlprogramm_Langfassung_Linke-BTW25_01.pdf",
     "SPD": "https://www.spd.de/fileadmin/Dokumente/Beschluesse/Programm/2025_SPD_Regierungsprogramm.pdf"
 }
 
@@ -239,7 +239,7 @@ with st.expander("Für Informationen zu diesem Tool hier klicken!"):
     st.write("""
     ### Daten und Methode
 
-    Dieses interaktive Tool erlaubt die Abfrage von Worthäufigkeiten in den Wahlprogrammen zur Bundestagswahl 2025. Datengrundlage sind die (im Falle der AfD und der Linken vorläufigen) Wahlprogramme im PDF-Format, die in ein txt-Format überführt und manuell bereinigt wurden. Für die Korrektheit dieser Aufbereitung wird keine Garantie übernommen. Für die linguistische Vorverarbeitung (Tokenisierung und Lemmatisierung) wurde der TreeTagger genutzt.
+    Dieses interaktive Tool erlaubt die Abfrage von Worthäufigkeiten in den Wahlprogrammen zur Bundestagswahl 2025. Datengrundlage sind die Wahlprogramme im PDF-Format, die in ein txt-Format überführt und manuell bereinigt wurden. Für die Korrektheit dieser Aufbereitung wird keine Garantie übernommen. Für die linguistische Vorverarbeitung (Tokenisierung und Lemmatisierung) wurde der TreeTagger genutzt.
 
     **Was zeigen die Balkendiagramme und wie sind sie zu lesen?**
     
@@ -253,5 +253,5 @@ with st.expander("Für Informationen zu diesem Tool hier klicken!"):
 
     Bei hinreichend frequenten Wörtern werden unter den Beispielbelegen auch Kollokationen angezeigt. Das sind Wörter, die im unmittelbaren Kontext des Suchwortes relativ häufiger vorkommen als im restlichen Text. Kollokationen zeigen also häufige Wortkombinationen an (etwa 'soziale Gerechtigkeit') und können im Verbund einen Eindruck von parteispezifischen Wortgebräuchen vermitteln. Das genutzte Assoziationsmaß ist LogRatio (die logarithmierte Ratio der relativen Häufigkeiten) bei einer Kontextgröße von 5 Wörtern links und rechts und eine Mindestfrequenz von 3.
 
-    **Es handelt sich um eine Testversion!** Feedback gerne an [simon.meier-vieracker@tu-dresden.de](mailto:simon.meier-vieracker@tu-dresden.de). Das Analyseskript kann auf GitHub eingesehen werden, Anpassungs- und Erweiterungsvorschläge sind sehr willkommen.
+    Feedback gerne an [simon.meier-vieracker@tu-dresden.de](mailto:simon.meier-vieracker@tu-dresden.de). Das Analyseskript kann auf GitHub eingesehen werden, Anpassungs- und Erweiterungsvorschläge sind sehr willkommen.
     """)
