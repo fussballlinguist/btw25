@@ -58,7 +58,7 @@ def sankey(source_indices, target_indices, components, component):
 	  height=len(components) * 21
 	  #font_color="blue",
 	)
-	st.plotly_chart(fig, use_container_width=True)
+	st.plotly_chart(fig, use_container_width=True, theme=None)
 	st.dataframe(df_composites, use_container_width=False)
 
 corpus = pd.read_csv("btw25_corrected.tsv", sep="\t", quoting=3)
