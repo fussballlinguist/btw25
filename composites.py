@@ -55,8 +55,8 @@ def sankey(source_indices, target_indices, components, component):
 	  title_text=f"Nominalkomposita mit <i>{component}</i>",
 	  font_size=14,
 	  width=500,  # Increase width
-	  height=len(components) * 21,
-	  font_color="blue",
+	  height=len(components) * 21
+	  #font_color="blue",
 	)
 	st.plotly_chart(fig, use_container_width=True)
 	st.dataframe(df_composites, use_container_width=False)
