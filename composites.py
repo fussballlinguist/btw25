@@ -4,6 +4,14 @@ import plotly.graph_objects as go
 from datetime import datetime
 import numpy as np
 
+st.markdown("""
+    <style>
+        svg text {
+            text-shadow: none !important;
+        }
+    </style>
+    """, unsafe_allow_html=True)
+
 today_date = datetime.today().strftime("%d.%m.%Y")
 
 st.write("### Nominalkomposita in Bundestagswahlprogrammen")
